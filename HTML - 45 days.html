@@ -1,0 +1,932 @@
+<html>
+<head>
+   
+    <title>HTML 45 - days</title>
+
+    <style>
+        table, th, td {
+            border:1px solid black;
+        }
+        .tab {
+            background-color: #b0cbf5;
+        }
+        th, td {
+            padding: 20px;
+            
+          }
+    </style>
+
+</head>
+<body>
+
+// ----Formatting Elements-----------------------------------------------------------------------<br><br>
+     
+    <i>This text is italic</i> <!--Italic text--> <br><br>
+   
+    <b>This text is bold</b> <!--Bold text-->  <br><br>
+
+    <em>This text is emphasized</em> <!--Emphasized text--> <br><br>
+
+    <p>My favorite color is <del>blue</del> red.</p> <!--Deleted text--> <br>
+   
+    <p>My favorite color is <ins>red</ins>.</p> <!--Inserted text--> <br>
+    
+    <p>This is <sub>subscripted</sub> text.</p> <!--Subscript text--> <br>
+    
+    <p>This is <sup>superscripted</sup> text.</p> <!--Superscript text--> <br>
+  
+    <p>Do not forget to buy <mark>milk</mark> today.</p> <!-- Marked text--> <br>
+   
+    <small>This is some smaller text.</small> <!--Smaller text--> <br>
+     
+    <br><strong>This text is important!</strong> <!--Important text--> <br> <br>
+
+// ----Links-------------------------------------------------------------------------------------------------------------------------<br><br>
+
+    <a href="https://www.w3schools.com">This is a link</a><br><br>
+
+// ----Links - Syntax------------------------------------------------------------------------------------------<br>
+
+    <a href="url">link text</a> <!--Links--> <br> <!-- hrefindicates the link-->
+
+// ----Target------------------------------------------------------------------------------------------<br>
+
+    <p>_self - Default. Opens the document in the same window/tab as it was clicked.</p>
+    <a href="complete-logo.png" target="_self">This is _self</a>
+    <p>_blank - Opens the document in a new window or tab.</p>
+    <a href="complete-logo.png" target="_blank">This is _blank</a>
+    <p>_parent - Opens the document in the parent frame.</p>
+    <a href="complete-logo.png" target="_parent">This is _parent</a>
+    <p>_top - Opens the document in the full body of the window.</p>
+    <a href="complete-logo.png" target="_top">This is _top</a> <br> <br>
+
+// ----Link Colors------------------------------------------------------------------------------------------<br>
+    
+    <div class="linkcolor">
+    <a href="html_images.asp" target="_blank">HTML color links</a> 
+    </div><br>
+
+// ----links background-----------------------------------------------------------------------------------<br>
+    <div class="linkbackground">
+    <a href="html_images.as" target="_top">HTML links background</a> 
+    </div><br>
+
+// ----Link bookmark------------------------------------------------------------------------------------------<br>
+
+    <p><a href="#C10">Jump to Chapter 10</a></p>
+    <p><a href="#C20">Jump to Chapter 20</a></p>
+
+    <h2>Chapter 1</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 2</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 3</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 4</h2>
+    <p>This chapter explains ba bla bla</p>
+    
+    <h2>Chapter 5</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 6</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 7</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 8</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 9</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C10">Chapter 10</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 11</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 12</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 13</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 14</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 15</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 16</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 17</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 18</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2>Chapter 19</h2>
+    <p>This chapter explains ba bla bla</p>
+
+    <h2 id="C20">Chapter 20</h2>
+    <p>This chapter explains ba bla bla</p>
+
+
+// ----Picture Element----------------------------------------------------------------------------------------------------------------<br>
+
+    <h2>The picture Element (minimize the site)</h2>
+
+    <picture>
+        <source media="(min-width: 1000px)" srcset="img_food.jpg">
+        <source media="(min-width: 800px)" srcset="img_car.jpg">
+        <img src="img_girl.jpg" style="width:auto;">
+    </picture><br><br>
+
+// ----To IMG add-------------------------------------------------------------------------------------------------------------------<br><br>
+
+    <img src="E:\HTML\1301119.jpg" > <!--SRC specifies the path--> <br>
+
+    <img src="E:\HTML\1301119.jpg" alt="IMG not found" > <!--alt print when img is not load--> <br>
+
+    <img src="E:\HTML\1301119.jpg"  width="150" height="100"> <!--IMG height & width-->  <br><br>
+
+// ----IMG map----------------------------------------------------------------------------------------------------------------------<br><br>
+
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap" height="380" width="400">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="mac.jpg">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="cellphone.jpg">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffeehouse2.jpg">
+    </map><br><br>
+
+// ----Background Images-----------------------------------------------------------------------------------------------------------<br>
+
+<h2>Background Image</h2>
+
+    <p>A background image for a p element:</p>
+
+    <p style="background-image: url('background');">
+    You can specify background images<br>
+    for any visible HTML element.<br>
+    In this example, the background image<br>
+    is specified for a p element.<br>
+    By default, the background-image<br>
+    will repeat itself in the direction(s)<br>
+    where it is smaller than the element<br>
+    where it is specified. (Try resizing the<br>
+    browser window to see how the<br>
+    background image behaves.
+    </p><br>
+
+// ----Absolute URL--------------------------------------------------------------------------------<br>
+
+    <p>img src=<mark>"https://www.w3schools.com/images/img_girl.jpg"</mark> ></p> <!--Online Links--> <br>
+
+// ----Relative URL-------------------------------------------------------------------------------<br>
+    <p>img src=<mark>"/images/img_girl.jpg"</mark> > </p> <!--File Links--> <br>
+
+// ----HTML Lists-----------------------------------------------------------------<br>
+
+    <p>HTML lists allow web developers to group a set of related items in lists.</p><br>
+
+// ----ordered lists----------------------------------------------------------------<br>
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+// ----unordered lists----------------------------------------------------------------<br>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+// ----HTML Description Lists---------------------------------------------------------<br>
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+
+<!------------------------------------------------------------------------------------------------------------->
+
+
+// ----HTML Forms------------------------------------------------------------------<br><br>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Jimil"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Kathrecha"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+// ----Form buttons-------------------------------------------------------------------<br>
+
+    <form>
+        <p>Radio button</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form>
+        <p>cheackbox button</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br>
+        <input type="submit" value="Submit">
+    </form>
+
+// ----The Action Attribute----------------------------------------------------------------------------<br>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Jimil"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Kathrecha"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+// ----HTML target Attributes----------------------------------------------------------------------------<br>
+
+    <p>_self - Default. Opens the document in the same window/tab as it was clicked.</p>
+    <a href="complete-logo.png" target="_self">This is _self</a>
+    <p>_blank - Opens the document in a new window or tab.</p>
+    <a href="complete-logo.png" target="_blank">This is _blank</a>
+    <p>_parent - Opens the document in the parent frame.</p>
+    <a href="complete-logo.png" target="_parent">This is _parent</a>
+    <p>_top - Opens the document in the full body of the window.</p>
+    <a href="complete-logo.png" target="_top">This is _top</a> <br> <br>
+  
+// ----Method Attribute---------------------------------------------------------------------------------<br>
+
+<h3>Notes on GET:</h3>
+
+<p>Appends the form data to the URL, in name/value pairs</p>
+<p>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</p>
+<p>The length of a URL is limited (2048 characters)</p>
+<p>Useful for form submissions where a user wants to bookmark the result</p>
+<p>GET is good for non-secure data, like query strings in Google</p>
+
+<h3>Notes on POST:</h3>
+
+<p>Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)</p>
+<p>POST has no size limitations, and can be used to send large amounts of data.</p>
+<p>Form submissions with POST cannot be bookmarked </p>
+
+// ----Autocomplete Attribute---------------------------------------------------------------------<br>
+
+<h3>ON</h3>
+    <form action="/action_page.php" autocomplete="on">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit">
+    </form>
+
+<h3>OFF</h3>
+    <form action="/action_page.php" autocomplete="off">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit">
+     </form>
+
+// ----Novalidate Attribute-------------------------------------------------------------------------<br>
+
+    <form action="/action_page.php" novalidate>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit">
+    </form>
+  
+// ----HTML form Elements----------------------------------------------------------------------------<br>
+
+<ul>
+    <li>input</li>
+
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <li>label</li>
+
+    <p>The <mark>label</mark> element defines a label for several form elements.</p>
+
+    <li>select</li>
+
+    <p>The select element defines a drop-down list:</p>
+
+    <form action="/action_page.php">
+        <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Mini</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        <input type="submit">
+    </form>
+
+    <li>textarea</li>
+
+    <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="30" >The cat was playing in the garden.</textarea><br><br>
+        <input type="submit">
+    </form>
+      
+    <ul>Height and width</ul>
+    <textarea name="message" style="width:200px; height:200px;">
+        The cat was playing in the garden.
+    </textarea>
+         
+    <li>button</li>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+        
+    <li>fieldset</li>
+
+    <form action="/action_page.php">
+        <fieldset>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <li>legend</li>
+
+    <form action="/action_page.php">
+        <fieldset>
+          <legend>Personalia:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+
+    <li>datalist</li>
+
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+    </form>
+
+    <li>output</li>
+
+    <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range"  id="a" value="50">
+        100 +
+        <input type="number" id="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <li>option</li>
+
+    <label for="cars">Choose a car:</label>
+
+        <select id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select><br><br>
+
+    <li>optgroup</li>
+
+    <label for="cars">Choose a car:</label>
+
+    <select  name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </optgroup>
+    </select>
+
+</ul>
+
+// ----HTML Input Types----------------------------------------------------------------------<br>
+
+<ul>
+    <li>Text</li>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+
+    <li>Password</li>
+    <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd">
+    </form>
+
+    <li>Submit</li>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <li>Reset</li>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+
+    <li>Radio</li>
+    <p>Choose your favorite Web language:</p>
+
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <li>Checkbox</li>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+    </form>
+
+    <li>Button</li>
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+    <li>Color</li>
+    <form>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+    </form>
+
+    <li>Date</li>
+    <form>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+    </form>
+
+    <li> Datetime-local</li>
+    <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+    </form>
+
+    <li>Email</li>
+    <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+    </form>
+
+    <li>Image</li>
+    <form>
+        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+    </form>
+
+    <li>File</li>
+    <form>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+    </form>
+
+    <li>Hidden</li>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Submit">
+    </form>
+
+    <li>Month</li>
+    <form>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+    </form>
+
+    <li> Number</li>
+    <form>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+    </form>
+
+    <li>Range</li>
+    <form>
+        <label for="vol">Volume (between 0 and 50):</label>
+        <input type="range" id="vol" name="vol" min="0" max="50">
+    </form>
+
+    <li>Search</li>
+    <form>
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+    </form>
+
+    <li>Tel</li>
+    <form>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </form>
+
+    <li>Time</li>
+    <form>
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+    </form>
+
+    <li>Url</li>
+    <form>
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage">
+    </form>
+
+    <li>Week</li>
+    <form>
+        <label for="week">Select a week:</label>
+        <input type="week" id="week" name="week">
+    </form>
+</ul>
+
+// ----HTML Input Attributes--------------------------------------------------------------------<br>
+
+<ul>
+    <li>value </li>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+    <li>readonly </li>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" readonly><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+    <li>disabled</li>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+    <li>size</li>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" size="4">
+    </form>
+
+    <li>maxlength</li>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50"><br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4">
+    </form>
+
+    <li>min and max</li>
+    <form>
+        <label for="datemax">Enter a date before 1980-01-01:</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+      
+        <label for="datemin">Enter a date after 2000-01-01:</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+      
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+    </form>
+
+    <li>multiple</li>
+    <form>
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple>
+    </form>
+
+    <li>pattern</li>
+    <form>
+        <label for="country_code">Country code:</label>
+        <input type="text" id="country_code" name="country_code"
+        pattern="[A-Za-z]{3}" title="Three letter country code">
+    </form>
+
+    <li>placeholder</li>
+    <form>
+        <label for="phone">Enter a phone number:</label>
+        <input type="tel" id="phone" name="phone"
+        placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    </form>
+
+    <li>required</li>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </form>
+
+    <li>step </li>
+    <form>
+        <label for="points">Points:</label>
+        <input type="number" id="points" name="points" step="3">
+    </form>
+
+    <li>autofocus</li>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" autofocus><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+    </form>
+
+    <li>height and width</li>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+    </form>
+
+    <li>list</li>
+    <form>
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+    </form>
+
+    <li>autocomplete</li>
+    <p>on</p>
+    <form action="/action_page.php" autocomplete="on">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="on"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>off</p>
+    <form action="/action_page.php" autocomplete="off">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="off"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</ul>
+
+// ----HTML Input form* Attributes-------------------------------------------------------<br>
+
+    <a>This chapter describes the different form* attributes for the HTML <ins>input</ins> element.</a>
+
+<ul>
+    <li>form</li>
+    <form action="/action_page.php" id="form1">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+      
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" form="form1">
+
+    <li>formaction</li>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+    </form>
+
+    <li>formenctype</li>
+    <form action="/action_page_binary.asp" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data"
+        value="Submit as Multipart/form-data">
+    </form>
+
+    <li>formmethod</li>
+    <form action="/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit using GET">
+        <input type="submit" formmethod="post" value="Submit using POST">
+    </form>
+
+    <li>formtarget</li>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+    </form>
+
+    <li>formnovalidate</li>
+    <form action="/action_page.php">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formnovalidate="formnovalidate"
+        value="Submit without validation">
+    </form>
+
+    <li>novalidate</li>
+    <form action="/action_page.php" novalidate>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</ul>
+
+// ----HTML Iframes------------------------------------------------------------------------------<br>
+
+<ul>
+    <li>Iframe Syntax</li>
+
+    <iframe src="url" title="description"></iframe>
+
+    <li>Height and Width</li>
+
+    <iframe src="demo_iframe.htm" height="200" width="500" title="Iframe Example"></iframe>
+
+    <iframe src="demo_iframe.htm" style="height:200px;width:600px;" title="Iframe Example"></iframe>
+
+    <li>Remove Border</li>
+
+    <iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
+
+    <iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+    <li>Target for a Link</li>
+
+    <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+    <p><a href="https://www.w3schools.com" target="iframe_a">Link</a></p>
+
+</ul>
+
+// ----HTML Object Tag------------------------------------------------------------------------------<br>
+
+<object data="mac.jpg" width="400" height="300"></object>
+
+<object data="" width="500" height="200"></object><br>
+
+
+// ----Table - colspan and rowspan------------------------------------------------------------------------------------------<br>
+
+    <table>
+        <tr>
+            <th colspan="2">Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td >Centro Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+// ----Table color-Size------------------------------------------------------------------------------------------<br>
+
+<div class="tab">
+    <table style="width:100%">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+</div>
+
+// ----Table color-Size------------------------------------------------------------------------------------------<br>
+
+
+    <table style="width:20%">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
